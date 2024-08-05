@@ -1,0 +1,36 @@
+### Results Table Summary for CNN Model Architecture VGG
+
+# Total Images:     40
+# Dog Images:       30
+# Not-a-Dog Images: 10
+
+% Not-a-Dog: 100.0%
+% Dogs Correct: 100%
+% Breeds Correct: 93.33333333333333%
+% Match Labels: 87.5%
+
+### Results Table Summary for CNN Model Architecture ALEXNET
+
+# Total Images:     40
+# Dog Images:       30
+# Not-a-Dog Images: 10
+
+% Not-a-Dog: 100.0%
+% Dogs Correct: 100.0%
+% Breeds Correct: 80.0%
+% Match Labels: 75.0%
+
+#Results Table Summary for CNN Model Architecture RESNET 
+
+# Total Images:     40
+# Dog Images:       30
+# Not-a-Dog Images: 10
+
+% Not-a-Dog: 90.0%
+% Dogs Correct: 100%
+% Breeds Correct: 90.0
+% Match Labels: 82.5%
+
+# The best Model Architecture is VGG. Considering both objectives 1 and 2, the model outperformed the other Architectures.
+#VGG has the highest correct breed percentage of 93.8 considering they all have the same 
+#percentage for is-Dog and not-Dog

@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              rottweiler_02.jpg  label:                 rottweiler
+ 2 key:              rottweiler_01.jpg  label:                 rottweiler
+ 3 key:                    lion_01.jpg  label:                       lion
+ 4 key:                     car_01.jpg  label:                        car
+
+     MATCH:
+
+                   lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo
+
+                    car_01.jpg: 
+Real:                        car   Classifier:          sports car, sport car
+
+ NOT A MATCH:
+
+             rottweiler_02.jpg: 
+Real:                 rottweiler   Classifier:        black-and-tan coonhound
+
+             rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:        black-and-tan coonhound
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                   lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    car_01.jpg: 
+Real:                        car   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             rottweiler_02.jpg: 
+Real:                 rottweiler   Classifier:        black-and-tan coonhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:        black-and-tan coonhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match: 50.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+
+INCORRECT Dog Breed Assignment:
+Real:                 rottweiler   Classifier:        black-and-tan coonhound
+Real:                 rottweiler   Classifier:        black-and-tan coonhound
+
+** Total Elapsed Runtime: 0:0:1
